@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-overlay": "@vant/weapp/overlay/index",
+    "van-toast": "@vant/weapp/toast/index"
+  }
+}

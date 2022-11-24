@@ -1,0 +1,61 @@
+<view class="shoppingCar">
+  <view class="shoppingCar-content">
+    <!--  bindtouchstart="touchStart" bindtouchmove="touchMove" -->
+    
+    <view class="shppping-list"  wx:for="{{carts}}" wx:key="{{index}}" >
+      <view class="list-btn1">
+        <image class="url1" bindtap="switchSelect" data-index="{{index}}" data-id="{{index}}" wx:if="{{!item.isSelect}}" src="../../images/abc_btn_check_to_on_mtrl_000.png"></image>
+        <image class="url1" bindtap="switchSelect"  data-index="{{index}}" wx:elif="{{item.isSelect}}" src="../../images/abc_btn_check_to_on_mtrl_015.png"></image>
+      </view>
+      <view class="list-pic">
+        <image class="url2" src="{{'https://hanmashanghu.qiaomai365.com' + item.main_img_url}}"></image>
+      </view>
+      <view class="list-item">
+        <view class="list-item-top">{{item.name}}</view>
+        <view class="list-item-bottom">
+          <view class="unadd" bindtap="UnaddCount" data-index="{{index}}">-</view>
+          <van-toast id="van-toast" />
+          <view class="count">{{item.count}}</view>
+          <view class="add" bindtap="addCount" data-index="{{index}}">+</view>
+        </view>
+      </view>
+      <view class="list-item1">
+        <view class="list-item1-top">￥{{item.price}}</view>
+        <view class="list-item1-bottom">
+          <image class="url3" bindtap="delGoods" data-index="{{index}}" src="../../images/delete.png"></image>
+        </view>
+      </view>
+      <!-- <view class="delete">删除</view> -->
+    </view>
+  <!-- </navigator> -->
+
+    <!-- <view>
+      <van-swipe-cell class="mm" id="swipe-cell" right-width="{{ 65 }}" async-close bind:close="onClose">
+        <van-cell-group>
+          <van-cell title="单元格" value="内容" />
+        </van-cell-group>
+        <view slot="right" class="de">删除</view>
+      </van-swipe-cell>
+
+    </view> -->
+
+    <view class="none" wx:if="{{carts == ''}}">
+      <image src="../../images/122.gif"></image>
+    </view>
+  </view>
+
+
+  <view class="shoppingCar-buy" wx:if="{{carts != ''}}">
+    <view class="all-btn">
+      <image bindtap="allSelect" wx:if="{{!isAllSelect}}" src="../../images/abc_btn_check_to_on_mtrl_000.png"></image>
+      <image bindtap="allSelect" wx:elif="{{isAllSelect}}" src="../../images/abc_btn_check_to_on_mtrl_015.png"></image>
+      <view>全选</view>
+    </view>
+    <view class="buy-count">
+      <view class="allCount">￥{{totalMoney}}</view>
+    </view>
+    <navigator url="../GWorder/GWorder">
+    <view class="goBuy" bindtap="goBuy">结算</view>
+  </navigator>
+  </view>
+</view>

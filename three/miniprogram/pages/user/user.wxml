@@ -1,0 +1,31 @@
+<view class="user">
+  <view class="user-pic">
+    <!-- <van-uploader file-list="{{ fileList }}" max-count="1" bind:after-read="afterRead" bindtap=" onSelectImage"/> -->
+    <view class="user-img" bindtap="onSelectImage">
+     <image src="../../images/微信图片_20221122091559.jpg"></image>
+    </view>
+    <navigator url="../login/login">
+    <view class="user-name">এ᭄ℒꪮꪜLꨁ⁵²º</view>
+  </navigator>
+    <van-icon class="user-icon" name="arrow" color="#aaa" size="20px"/>
+  </view>
+  <navigator url="../myOrder/myOrder">
+  <view class="user-detail">
+    <view class="user-detail-name">我的订单</view>
+    <van-icon class="user-detail-icon" name="arrow" color="#aaa" size="20px"/>
+  </view>
+</navigator>
+<navigator url="../address/address">
+  <view class="user-detail">
+    <view class="user-detail-name">地址管理</view>
+    <van-icon class="user-detail-icon" name="arrow" color="#aaa" size="20px"/>
+  </view>
+</navigator>
+  
+  <navigator>
+  <view class="user-detail">
+    <view class="user-detail-name">设置</view>
+    <van-icon class="user-detail-icon" name="arrow" color="#aaa" size="20px"/>
+  </view>
+  </navigator>
+</view>

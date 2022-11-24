@@ -1,0 +1,32 @@
+<import src="./classification.skeleton" />
+<template is="skeleton" wx-if="{{loading}}" />
+<view class="classification">
+  <view class="classification-left">
+    <view class="tab-list {{curIndex === index? 'active' : ''}}" wx:for="{{tabArr}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchTab">{{item.name}}</view>
+  </view>
+
+
+  <scroll-view class="classification-right" scroll-y="{{isScroll}}" scroll-into-view="{{toView}}" scroll-with-animation="true">
+    <view class="" wx:for="{{banner}}" wx:for-index wx:key="index">
+      <view class="classification-bigbox" id="{{'s'+item.id}}" >
+        <view class="banner">
+          <image src="{{'https://hanmashanghu.qiaomai365.com' + item.img.url}}"></image>
+        </view>
+        <view class="classification-name">
+          {{tabArr[index].name}}
+          <view class="line1"></view>
+          <view class="line2"></view>
+        </view>
+        <view class="classification-product">
+          <view class="product-list" wx:for="{{productArr[index]}}" wx:key="index" wx:for-item="a">
+            <navigator url="../productDetail/productDetail?id={{a.id}}">
+            <image src="{{'https://hanmashanghu.qiaomai365.com' + a.main_img_url}}"></image>
+            <view class="product-name">{{a.name}}</view>
+            </navigator>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </scroll-view>
+</view>

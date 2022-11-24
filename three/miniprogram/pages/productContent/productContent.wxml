@@ -1,0 +1,16 @@
+<view class="product-content">
+  <view class="product-pic">
+    <image src="{{'https://hanmashanghu.qiaomai365.com' + imgUrl}}"></image>
+  </view>
+  <view class="product-item">
+    <view class="product-list" wx:for="{{contentArr}}" wx:key="index">
+    <navigator url="../productDetail/productDetail?id={{item.id}}">
+      <view class="product-list-img">
+        <image class="pic" src="{{'https://hanmashanghu.qiaomai365.com' + item.main_img_url}}"></image>
+      </view>
+      <view class="product-list-name">{{item.name}}</view>
+      <view class="product-list-price">{{item.price}}</view>
+      </navigator>
+    </view>
+  </view>
+</view>

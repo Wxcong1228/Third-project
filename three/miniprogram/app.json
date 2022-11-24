@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/classification/classification",
+    "pages/shoppingCar/shoppingCar",
+    "pages/user/user",
+    "pages/productContent/productContent",
+    "pages/productDetail/productDetail",
+    "pages/address/address",
+    "pages/message/message",
+    "pages/order/order",
+    "pages/order-address/order-address",
+    "pages/GWorder/GWorder",
+    "pages/success/success",
+    "pages/myOrder/myOrder"
+   
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "啥都有商城",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#e4393c",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home",
+        "iconPath": "images/home-off.png",
+        "selectedIconPath": "images/home-on.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/classification/classification",
+        "iconPath": "images/fl-off.png",
+        "selectedIconPath": "images/fl-on.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/shoppingCar/shoppingCar",
+        "iconPath": "images/cart-off.png",
+        "selectedIconPath": "images/cart-on.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "images/my-off.png",
+        "selectedIconPath": "images/my-on.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "van-toast": "@vant/weapp/toast/index"
+  },
+    "requiredPrivateInfos": [
+      "getLocation",
+      "chooseLocation",
+      "chooseAddress"
+    ],
+    "permission": {
+      "scope.userLocation": {
+        "desc": "mmmm"
+      }
+    }
+}

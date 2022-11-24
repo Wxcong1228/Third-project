@@ -1,0 +1,6 @@
+<view class="success">
+  <view class="success-content">
+    <icon class="icon-box-img" type="success" size="93"></icon>
+    <view class="success-content-text">订单已完成，请前往我的订单中查看</view>
+  </view>
+</view>

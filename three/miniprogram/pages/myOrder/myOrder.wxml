@@ -1,0 +1,19 @@
+<view class="my-order">
+ <view class="order-list" wx:for="{{order}}" wx:key="{{index}}">
+  <view class="order-top">
+    <view class="order-pic">
+      <image src="{{'https://hanmashanghu.qiaomai365.com' + item.main_img_url}}"></image>
+      <view class="order-content">
+        <view class="order-name">{{item.name}}</view>
+        <view class="order-price">￥{{item.price}}</view>
+      </view>
+    </view>
+   
+    <view class="order-count">x{{counts[index]}}</view>
+  </view>
+  <view class="order-bottom">合计:￥{{counts[index]*price}}</view>
+  <view class="del" bindtap="delGoods" data-index="{{index}}" >
+    <image src="../../images/delete.png"></image>
+  </view>
+ </view>
+</view>

@@ -1,0 +1,35 @@
+/* pages/productContent/productContent.wxss */
+.product-content {
+  width: 100vw;
+  height: 100vh;
+}
+.product-pic {
+  width: 100%;
+}
+.product-pic image {
+  width: 100vw;
+}
+.product-item {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-list {
+  flex: 0 0 48vw;
+  background-color: rgb(212, 207, 207,.2);
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+  border-radius: 10px;
+  text-align: center;
+}
+.pic {
+  width: 100%;
+  height: 360rpx;
+}
+.product-list-name {
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+.product-list-price {
+  font-size: 36rpx;
+}

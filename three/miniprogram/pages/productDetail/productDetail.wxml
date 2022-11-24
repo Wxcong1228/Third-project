@@ -1,0 +1,47 @@
+<!--pages/productDetail/productDetail.wxml-->
+<view class="productDetail">
+<view class="productDetail-list">
+  <view class="productDetail-pic">
+    <image src="{{'https://hanmashanghu.qiaomai365.com' + arr.main_img_url}}"></image>
+  </view>
+
+  <view class="productDetail-all">
+  <view class="productDetail-detail">该商品由啥都有百货公司发货 够快购新鲜</view>
+  <view class="productDetail-name">{{arr.name}}</view>
+  <view class="productDetail-detail">一口嘎嘣脆 香甜爽到不行</view>
+</view>
+
+<view class="Introduction">
+  <van-tabs style="width: 100vw" active="{{ active }}" animated>
+  <van-tab class="a" title="商品详情">1</van-tab>
+  <van-tab class="a" title="产品参数">2</van-tab>
+  <van-tab class="a" title="售后保障">7天无理由退货</van-tab>
+</van-tabs>
+  
+</view>
+
+<view class="recommend-product">
+ <view class="recommend-title">推荐相似商品</view>
+</view>
+
+  <view class="productDetail-btn">
+  <navigator open-type="switchTab" url="../shoppingCar/shoppingCar">
+    <view class="productDetail-pic1">
+    <image class="btn1" src="../../images/active_gouwuche.png"></image>
+    </view>
+    </navigator>
+    <view class="productDetail-price">￥{{arr.price}}</view>
+    <view class="to">
+    <view class="productDetail-addCar" bindtap="addCart">加入到购物车</view>
+    <van-toast id="van-toast" />
+    <navigator url="../order/order?id={{arr.id}}">
+    <view class="productDetail-submit">立即购买</view>
+    </navigator>
+  </view>
+    <view class="num" wx:if="{{isClick}}">{{length}}</view>
+  </view>
+
+  
+</view>
+
+</view>

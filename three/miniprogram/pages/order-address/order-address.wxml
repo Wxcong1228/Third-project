@@ -1,0 +1,24 @@
+<!--pages/address/address.wxml-->
+<view class="address">
+<view class="address-content">
+
+ <view class="address-list" wx:for="{{addressArr}}" wx:index="{{index}}" bindtap="todetail">
+  <view class="address-list-top">
+    <view class="user-name">{{item.consignee}}</view>
+    <view class="user-phone">{{item.mobile}}</view>
+  </view>
+  <view class="address-list-bottom">
+   <view class="user-address">{{item.address}}</view>
+  </view>
+  <view class="delete-address" data-index="{{index}}" bindtap="del">
+    <image class="del" src="../../images/delete.png"></image>
+  </view>
+ </view>
+
+</view>
+<navigator url="../message/message">
+  <view class="add-address">
+    添加地址
+  </view>
+  </navigator>
+</view>

@@ -1,0 +1,44 @@
+.message {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+.message-name {
+  display: flex;
+  width: 100vw;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  border-bottom: 1rpx solid #ddd;
+}
+.text {
+  width: 67px;
+}
+.message-name input {
+  margin-left: 10px;
+  height: 50px;
+  width: 70vw;
+}
+.message-btn {
+  width: 100vw;
+  margin-top: 30px;
+}
+.message-save {
+  width: 50vw;
+  height: 50px;
+  background-color: rgb(248, 58, 58,.9);
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.map {
+  display: flex;
+  margin-left: 10px;
+  overflow: hidden;
+}
+.a {
+  color: #878787;
+}

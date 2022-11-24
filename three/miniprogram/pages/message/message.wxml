@@ -1,0 +1,41 @@
+<!--pages/message/message.wxml-->
+<view class="message">
+  <view class="message-name">
+    <view class="text">收货人</view>
+    <input type="text" bindinput='Value' placeholder="请输入收货人姓名" />
+  </view>
+  <view class="message-name">
+    <view class="text">手机号码</view>
+    <input type="text" bindinput='Value1' placeholder="请输入收货人手机号码" />
+  </view>
+  <view class="message-name">
+  <view class="text">收货地址</view>
+  <view class="map" bindtap="moveToLocation">
+    <van-icon name="location-o" />
+    <view class="a" wx:if="{{address == ''}}">点击选择收货地址</view>
+    <view class="b" >{{address}}</view>
+  </view>
+  </view>
+  
+  <!-- <view class="message-name">
+    <view class="text">省份</view>
+    <input type="text" bindinput='Value2' placeholder="请输入所在省份" />
+  </view>
+  <view class="message-name">
+    <view class="text">城市</view>
+    <input type="text" bindinput='Value3' placeholder="请输入所在城市" />
+  </view>
+  <view class="message-name">
+    <view class="text">区县</view>
+    <input type="text" bindinput='Value4' placeholder="请输入所在区县" />
+  </view> -->
+  <view class="message-name">
+    <view class="text">详细地址</view>
+    <input type="text" bindinput='Value5' placeholder="请输入收货人详细地址" />
+  </view>
+    <view class="message-btn">
+    <!-- <navigator url="../address/address"> -->
+      <view class="message-save" bindtap="submit">保存</view>
+      <!-- </navigator> -->
+    </view>
+  </view>

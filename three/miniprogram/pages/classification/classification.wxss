@@ -1,0 +1,91 @@
+/* pages/classification/classification.wxss */
+@import './classification.skeleton.wxss';
+.classification {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.classification-left {
+  width: 160rpx;
+  height: 100%;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+}
+.tab-list {
+  width: 100%;
+  text-align: center;
+  height: 90rpx;
+  font-size: 34rpx;
+  line-height: 90rpx;
+  border-left: 6rpx solid #fff;
+}
+
+.tab-list.active {
+  color: #e4393c;
+  border-color: #e4393c;
+  border-left: 6rpx solid #e4393c;
+}
+.classification-right {
+  width: 80vw;
+  /* height: 100vh; */
+}
+.classification-bigbox {
+  width: 100%;
+  height: 100vh;
+
+}
+.banner {
+  width: 100vw;
+  height: 200rpx;
+  padding: 6% 3% 0;
+}
+image {
+  width: 75%;
+  height: 90%;
+  border-radius: 10px;
+}
+.classification-product {
+  width: 100%;
+  height: calc(100vh - 280rpx);
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-list {
+  width: 50%;
+ margin: 0;
+ padding: 0;
+ text-align: center;
+}
+
+.product-list image {
+  width: 250rpx;
+  height: 250rpx;
+}
+.product-name {
+  font-size: 24rpx;
+  text-align: center;
+}
+.classification-name {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #e4393c;
+}
+.line1 {
+  width: 90rpx;
+  height: 4rpx;
+  background-color: #e4393c;
+  position: absolute;
+  top:47%;
+  left: 26%;
+}
+.line2 {
+  width: 90rpx;
+  height: 4rpx;
+  background-color: #e4393c;
+  position: absolute;
+  top:47%;
+  right: 26%;
+}

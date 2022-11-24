@@ -1,0 +1,13 @@
+/* pages/success/success.wxss */
+.success {
+  width: 100vw;
+  height: 100vh;
+}
+.success-content {
+  width: 100vw;
+  text-align: center;
+  margin-top: 30%;
+}
+.success-content-text {
+  margin-top: 20px;
+}

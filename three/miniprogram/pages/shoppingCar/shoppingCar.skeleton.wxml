@@ -1,0 +1,110 @@
+<!--
+此文件为开发者工具生成，生成时间: 2022/11/18下午4:49:39
+使用方法：
+在 D:\项目\three\miniprogram\pages\shoppingCar\shoppingCar.wxml 引入模板
+
+```
+<import src="shoppingCar.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 D:\项目\three\miniprogram\pages\shoppingCar\shoppingCar.wxss 中引入样式
+```
+@import "./shoppingCar.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="shoppingCar">
+      <view class="shoppingCar-content">
+        <view class="shppping-list">
+          <view class="list-btn1">
+            <image class="url1 sk-image" data-id="0" data-index="0"></image>
+          </view>
+          <view class="list-pic">
+            <image class="url2 sk-image"></image>
+          </view>
+          <view class="list-item">
+            <view class="list-item-top sk-transparent sk-text-37-0000-731 sk-text">芝麻 50克</view>
+            <view class="list-item-bottom">
+              <view class="unadd sk-transparent sk-opacity" data-index="0">-</view>
+              <view is="miniprogram_npm/@vant/weapp/toast/index" id="van-toast">
+                <view is="miniprogram_npm/@vant/weapp/transition/index"></view>
+              </view>
+              <view class="count sk-transparent sk-text-37-0000-143 sk-text">6</view>
+              <view class="add sk-transparent sk-text-30-0000-429 sk-text" data-index="0">+</view>
+            </view>
+          </view>
+          <view class="list-item1">
+            <view class="list-item1-top sk-transparent sk-text-14-2857-941 sk-text">￥0.01</view>
+            <view class="list-item1-bottom">
+              <image class="url3 sk-image" data-index="0"></image>
+            </view>
+          </view>
+        </view>
+        <view class="shppping-list">
+          <view class="list-btn1">
+            <image class="url1 sk-image" data-id="1" data-index="1"></image>
+          </view>
+          <view class="list-pic">
+            <image class="url2 sk-image"></image>
+          </view>
+          <view class="list-item">
+            <view class="list-item-top sk-transparent sk-text-37-0000-823 sk-text">香米 327克</view>
+            <view class="list-item-bottom">
+              <view class="unadd sk-transparent sk-opacity" data-index="1">-</view>
+              <view is="miniprogram_npm/@vant/weapp/toast/index" id="van-toast">
+                <view is="miniprogram_npm/@vant/weapp/transition/index"></view>
+              </view>
+              <view class="count sk-transparent sk-text-37-0000-804 sk-text">2</view>
+              <view class="add sk-transparent sk-text-30-0000-159 sk-text" data-index="1">+</view>
+            </view>
+          </view>
+          <view class="list-item1">
+            <view class="list-item1-top sk-transparent sk-text-14-2857-909 sk-text">￥0.01</view>
+            <view class="list-item1-bottom">
+              <image class="url3 sk-image" data-index="1"></image>
+            </view>
+          </view>
+        </view>
+        <view class="shppping-list">
+          <view class="list-btn1">
+            <image class="url1 sk-image" data-id="2" data-index="2"></image>
+          </view>
+          <view class="list-pic">
+            <image class="url2 sk-image"></image>
+          </view>
+          <view class="list-item">
+            <view class="list-item-top sk-transparent sk-text-37-0000-924 sk-text">香脆的猪耳朵 120克</view>
+            <view class="list-item-bottom">
+              <view class="unadd sk-transparent sk-opacity" data-index="2">-</view>
+              <view is="miniprogram_npm/@vant/weapp/toast/index" id="van-toast">
+                <view is="miniprogram_npm/@vant/weapp/transition/index"></view>
+              </view>
+              <view class="count sk-transparent sk-text-37-0000-358 sk-text">2</view>
+              <view class="add sk-transparent sk-text-30-0000-79 sk-text" data-index="2">+</view>
+            </view>
+          </view>
+          <view class="list-item1">
+            <view class="list-item1-top sk-transparent sk-text-14-2857-613 sk-text">￥0.01</view>
+            <view class="list-item1-bottom">
+              <image class="url3 sk-image" data-index="2"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="shoppingCar-buy">
+        <view class="all-btn">
+          <image class="sk-image"></image>
+          <view class="sk-transparent sk-text-32-2222-983 sk-text" style="background-position-x: 50%;">全选</view>
+        </view>
+        <view class="buy-count">
+          <view class="sk-transparent sk-text-30-0000-90 sk-text">总价：￥0</view>
+        </view>
+        <view class="goBuy sk-transparent sk-text-30-0000-844 sk-text" style="background-position-x: 50%;">结算</view>
+      </view>
+    </view>
+  </view>
+</template>

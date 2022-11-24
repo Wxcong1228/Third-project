@@ -1,0 +1,55 @@
+<import src="./home.skeleton" />
+<template is="skeleton" wx-if="{{loading}}" />
+<view class="home">
+
+<!-- 轮播图 -->
+  <view class="swiper">
+    <swiper class="swiper1" circular autoplay 	indicator-dots="true" 	indicator-color="#bbb" 	indicator-active-color="#50f1ba">
+      <view wx:for="{{items}}" wx:key="index">
+        <swiper-item>
+          <image src="{{'https://hanmashanghu.qiaomai365.com' + item.img.url}}"></image>
+        </swiper-item>
+      </view>
+    </swiper>
+
+  </view>
+
+  <!-- 精选商品 -->
+  <view class="hot-list">
+    <view class="title">精选商品</view>
+    <view class="hot-commodity">
+    <view class="hot-commodity-top">
+      <view class="commodity-item1">
+        <navigator url="../productContent/productContent?item=1">
+        <image class="img1" src="{{'https://hanmashanghu.qiaomai365.com' + imgArr1.topic_img.url}}"></image>
+        </navigator>
+      </view>
+      <view class="commodity-item2">
+        <navigator url="../productContent/productContent?item=2">
+        <image class="img2" src="{{'https://hanmashanghu.qiaomai365.com' + imgArr2.topic_img.url}}"></image>
+        </navigator>
+      </view>
+      </view>
+      <view class="commodity-item3">
+        <navigator class="img3" url="../productContent/productContent?item=3">
+        <image src="{{'https://hanmashanghu.qiaomai365.com' + imgArr3.topic_img.url}}"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <!-- 新品推荐 -->
+  <view class="New-products">
+  <view class="products-title">新品推荐</view>
+    <view class="product-item">
+      <view class="product-list" wx:for="{{productArr}}" wx:key="index">
+        <navigator url="../productDetail/productDetail?id={{item.id}}">
+        <image class="img" src="{{'https://hanmashanghu.qiaomai365.com' + item.main_img_url}}"></image>
+        <view class="product-name">{{item.name}}</view>
+        <view class="product-price">￥{{item.price}}</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  
+</view>

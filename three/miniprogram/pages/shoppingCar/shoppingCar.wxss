@@ -1,0 +1,128 @@
+.shoppingCar{
+  width: 100vw;
+  position: relative;
+}
+.shoppingCar-content {
+  width: 100vw;
+  height: calc(100vh - 50px);
+  overflow: auto;
+}
+.shppping-list {
+  width: 100vw;
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+.list-btn1 {
+  width: 30px;
+  text-align: center;
+  line-height: 100px;
+  margin-left: 5px;
+}
+.list-pic {
+  width: 100px;
+}
+.add {
+  font-size: 20px;
+}
+.unadd {
+  font-size: 25px;
+}
+.list-item {
+  width: 130px;
+  font-size: 13px;
+  line-height: 50px;
+}
+.list-item-bottom {
+  padding-left: 0px;
+}
+.count {
+  padding: 0 15px;
+}
+.url1{
+  width: 20px;
+  height: 20px;
+}
+.url2{
+  width: 100px;
+  height: 100px;
+}
+.url3{
+  width: 20px;
+  height: 20px;
+}
+.list-item-bottom {
+  width: 20%;
+  display: flex;
+}
+.list-item1{
+  margin-left: 15%;
+}
+.list-item1-top {
+  margin-top: 15px;
+  font-size: 13px;
+}
+.list-item1-bottom {
+  margin-top: 35px;
+  padding-left: 20px;
+}
+.shoppingCar-buy {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  box-sizing: border-box;
+  padding: 5px 0;
+}
+.none {
+  width: 70%;
+  height: 40%;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.none image {
+  width: 100%;
+  height: 100%;
+}
+
+.all-btn {
+  width: 20%;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all-btn image {
+  width: 30%;
+  height: 60%;
+}
+.buy-count {
+  width: 140px;
+  line-height: 40px;
+  margin-left: 14%;
+}
+.goBuy {
+  width: 100px;
+  line-height: 40px;
+  background-color: #fb5039;
+  text-align: center;
+  border-radius: 999px;
+  color: #fff;
+}
+.delete {
+  width: 20%;
+  height: 104px;
+  background-color: red;
+}
+.allCount {
+  /* font-size: 10rpx; */
+  font-size: 28rpx;
+  overflow: hidden;
+}
+

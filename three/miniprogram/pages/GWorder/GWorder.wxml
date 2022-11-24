@@ -1,0 +1,66 @@
+<view class="order">
+<navigator url="../address/address">
+  <view class="order-address">
+    <view class="order-icon1">
+      <van-icon name="location-o" color="#e4393c" size="20px"/>
+    </view>
+    <view class="order-text" wx:if="{{address === ' '}}">添加收货地址</view>
+    <view class="message">
+    <view class="order-message">
+      <view class="user-name">{{address.consignee}}</view>
+    <view class="user-phone">{{address.mobile}}</view>
+    </view>
+    <view class="user-address">{{address.address}}</view>
+  </view>
+    <view class="order-icon2">
+      <van-icon name="arrow" color="#ddd" size="20px"/>
+    </view>
+  </view>
+</navigator>
+
+  <view class="order-product" wx:for="{{productArr}}" wx:key="{{index}}">
+    <view class="order-product-content">
+      <view class="order-product-pic">
+      <image src="{{'https://hanmashanghu.qiaomai365.com' + item.url}}"></image>
+      </view>
+      <view class="order-product-name">
+        <view class="order-name">{{item.name}}</view>
+        <view class="order-price">￥{{item.price}}</view>
+        <view class="border-box">
+        <view class="border">7天无理由退货</view>
+        <view class="border1">破损包退</view>
+      </view>
+      <view class="count">x{{item.count}}</view>
+      </view>
+    </view>
+
+    <view class="some-list">
+      <view class="item1">
+        <view class="item1-left">进口税(含运费税款)</view>
+        <view class="item1-right">价格已含税</view>
+      </view>
+      <view class="item1">
+        <view class="item1-left">配送服务</view>
+        <view class="item1-right">包邮送运费险</view>
+      </view>
+      <view class="item1">
+        <view class="item1-left">店铺优惠</view>
+        <view class="item1-right">满1件打骨折</view>
+      </view>
+      <view class="item1">
+        <view class="item1-left">配送说明</view>
+        <view class="item1-right">
+        商家会将此商品以独立包裹发货</view>
+      </view>
+    </view>
+ 
+  </view>
+
+  <view class="order-footer">
+    <view class="footer-total">总价：￥{{productArr[0].totalMoney}}</view>
+    <navigator url="../success/success">
+    <view class="footer-submit" bindtap="{{show == !show}}">提交订单</view>
+    </navigator>
+  </view>
+  
+</view>
